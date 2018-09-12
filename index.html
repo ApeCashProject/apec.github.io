@@ -188,7 +188,7 @@ title: ApeCash Project
             "Please run MetaMask (or something else that injects web3).");
     } else {
       log("Found injected web3.");
-      web3 = new Web3(web3.currentProvider);
+      web3 = new web3.providers.HttpProvider('https://mainnet.infura.io/v3/c91a941e3e5641d5b3acddaea87b5fc6');
       if (web3.version.network != 1) {
         error("Wrong network detected. Please switch to the Ropsten test network.");
       } else {
