@@ -3,23 +3,21 @@ layout: default
 title: ApeCash Project
 ---
 
-  <body class="w-100 sans-serif bg-white">
+  <body>
 
-<main class="mw7 center" role="main">
-      
-<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+<script src="https://apecashproject.github.io/web3.min.js"></script>
 <script src='https://apecashproject.github.io/ethereumjs-all-2017-10-31.min.js'></script>
 <script src='https://apecashproject.github.io/moment.min.js'></script>
-	<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-<div class='flex-l mt2 w8 center article-container'>
-<article class="cf pv5 ph3 ph4-ns w-100">
+<div>
+<article>
   <header>
-    <h1 class="f1 mb1">
+    <h1>
       Initial Coin Offering Example
     </h1>
   </header>
-  <div class="lh-copy fw3 f4 dark-gray">
+  <div>
     <style>
   @keyframes spin {
     0% {
@@ -31,16 +29,16 @@ title: ApeCash Project
   }
 </style>
 
-<div id="spinner" class="mt5">
+<div id="spinner">
   <div style="margin: 0px auto; border-radius: 100%; border-width: 3px; border-style: solid; border-color: rgb(33, 150, 243) rgb(238, 238, 238) rgb(238, 238, 238); border-image: initial; width: 32px; height: 32px; animation: spin 0.8s linear infinite;"></div>
   <small class="tc db f6 black-60">Loading...</small>
 </div>
-<div id="ui" class="dn">
-  <p class="mt4">
+<div id="ui">
+  <p>
     Your current balance: <span id="owned">0</span> APEc.
     Buy more! Each token costs 0.000008 ETH.
   </p>
-  <form id="buyForm" class="br2-ns">
+  <form id="buyForm">
     <fieldset class="cf bn ma0 pa0">
       <div class="cf">
         <label class="clip" for="number">Number of tokens to buy</label>
@@ -308,7 +306,7 @@ title: ApeCash Project
       "Please run MetaMask (or something else that injects web3).");
     } else {
       log("Found injected web3.");
-      web3 = new web3.providers.HttpProvider('https://mainnet.infura.io/v3/c91a941e3e5641d5b3acddaea87b5fc6');
+      web3 = new Web3(web3.currentProvider);
       if (web3.version.network != 1) {
         error("Wrong network detected. Please switch to the Ethereum Mainnet.“);
       } else {
