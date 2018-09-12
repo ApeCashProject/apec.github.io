@@ -351,7 +351,7 @@ title: ApeCash Project
     } else {
       log("Found injected web3.");
       web3 = new Web3(web3.currentProvider);
-      if (web3.version.network !== '1') {
+      if (web3.version.network != 3) {
         error("Wrong network detected. Please switch to the Ethereum Mainnet.“);
       } else {
         log("Connected to the Ethereum Mainnet.“);
