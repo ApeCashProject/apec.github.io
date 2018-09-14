@@ -149,7 +149,7 @@
   <small class="tc db f6 black-60">Loading...</small>
 </div>
 <div id="ui" class="dn">
-	<small class="f6 black-60 db mb2"><br /><br />The ApeCash Project aims to raise awareness for primate endangerment. We will build a decentralized direct-donation platform, using ApeCash Coin (APEc) as fuel. <a href="http://apecash.org" target="_blank">Find out more</a>.</small>
+	<small class="f6 black-60 db mb2"><br /><br />The ApeCash Project aims to raise awareness for primate endangerment. We are building a <a href="https://apecash.org/2018/09/13/introducing-project-caesar-phase-3-of-the-apecash-project-a-decentralized-direct-donation-platform/" target="_blank">decentralized direct-donation platform</a>, using ApeCash Coin (APEc) as fuel. Find out more <a href="http://apecash.org" target="_blank">on our website</a> and read <a href="https://apecash.files.wordpress.com/2018/09/litepaper.pdf" target="_blank">our lite paper</a>.</small>
   <p class="mt4">
     Your current ApeCash Coin balance: <span id="owned">0</span> APEc.
     You can redeem APEc tokens in exchange for an ETH donation to project development – please use <a href="https://metamask.io/" target="_blank">MetaMask</a>. One token costs 0.000008 ETH.
@@ -412,7 +412,7 @@
   $(function () {
     if (typeof(web3) === "undefined") {
       error("Unable to find web3. " +
-      "Please run MetaMask (or something else that injects web3).");
+      "Please install and login to MetaMask.");
     } else {
       log("Found injected web3.");
       web3 = new Web3(web3.currentProvider);
